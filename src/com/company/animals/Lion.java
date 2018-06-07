@@ -1,4 +1,6 @@
-package com.company;
+package com.company.animals;
+
+import com.company.animals.Animal;
 
 public class Lion extends Animal{
     private double noseSize;
