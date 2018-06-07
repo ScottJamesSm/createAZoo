@@ -16,9 +16,7 @@ public class Penguin extends Animal{
         return type;
     }
 
-    public void setType(String type) {
-        this.type = type;
-    }
+    
 
     public String getFeatherType() {
         return featherType;
