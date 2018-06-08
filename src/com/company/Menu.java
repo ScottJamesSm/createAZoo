@@ -24,11 +24,18 @@ public class Menu {
                     //manage Inventory
                     manageInventory();
                     break;
+
+                case 4:
+                    System.out.println("thank you for using the zoo program");
+                    System.exit(0);
+                    break;
+
                 default:
                     //handle wrong number
                     System.out.println("that is not a valid entry. Please enter a number between 1 and 3");
                     mainMenu();
                     // Restart method to allow user to try again
+                break;
             }
         }catch(InputMismatchException ime){
             // Handle if a  user puts in something that is not an int
@@ -54,5 +61,22 @@ public class Menu {
     // handles People options
     private void managePeople() {
 
+        //find out what type of people to manage
+        System.out.println("are you" + "\n1. an Employee" + "\n2. a Visitor" + "\n3. go back" + "\n4. exit");
+//handles people management options
+        switch (input.nextInt()) {
+            case 1:
+                // Handle Employee
+                break;
+            case 2:
+                //Handle Viditor
+                break;
+            //Handle oncorrect input
+            case 4:
+                break;
+            default:
+                break;
+        }
+    }
     }
 }
