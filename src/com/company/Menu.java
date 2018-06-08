@@ -28,15 +28,15 @@ public class Menu {
     }
 
     }
-
+    //Handles incentory options
     private void manageInventory() {
-        
-    }
 
+    }
+    //handles Animals options
     private void manageAnimals() {
 
     }
-
+    // handles People options
     private void managePeople() {
 
     }
