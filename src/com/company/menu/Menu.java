@@ -1,11 +1,12 @@
-package com.company;
+package com.company.menu;
+
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
 public class Menu {
     private Scanner input = new Scanner(System.in);
 
-    public void  mainMenu() throws InputMismatchException{
+    public void mainMenu() {
 
 
         System.out.println("Please Choose an option. " + "\n1. Manage People" + "\n2. Manage Animals" + "\n3. Manage Inventory");
@@ -14,7 +15,8 @@ public class Menu {
             switch (input.nextInt()) {
                 case 1:
                     //manage People
-                    managePeople();
+                    PeopleMenu peopleMenu = new PeopleMenu ();
+                   peopleMenu.managePeople();
                     break;
                 case 2:
                     //manage Animals
@@ -35,15 +37,16 @@ public class Menu {
                     System.out.println("that is not a valid entry. Please enter a number between 1 and 3");
                     mainMenu();
                     // Restart method to allow user to try again
-                break;
+                    break;
             }
-        }catch(InputMismatchException ime){
+        } catch (InputMismatchException ime) {
             // Handle if a  user puts in something that is not an int
             input.nextLine();
             System.out.println("that is not a valid entry please enter a number between 1 and 3");
             mainMenu();
         }
     }
+
     //Handles incentory options
     private void manageInventory() {
         try {
@@ -54,6 +57,7 @@ public class Menu {
         }
 
     }
+
     //handles Animals options
     private void manageAnimals() {
 
