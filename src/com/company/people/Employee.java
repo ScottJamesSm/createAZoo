@@ -1,10 +1,13 @@
 package com.company.people;
+import java.util.List;
 
 public class Employee extends People{
     private int employeeNumbers;
     private String jobTitle;
     private String hireDay;
     private int hours;
+
+    private List <Employee> employeeList;
 
     public Employee(int age, String name, char gender, String race, int employeeNumbers, String jobTitle, String hireDay) {
         super(age, name, gender, race);
@@ -16,7 +19,6 @@ public class Employee extends People{
     public int getEmployeeNumbers() {
         return employeeNumbers;
     }
-
 
     public String getJobTitle() {
         return jobTitle;
