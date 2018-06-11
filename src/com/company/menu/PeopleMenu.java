@@ -149,7 +149,8 @@ public class PeopleMenu {
                     String employeeHireDate = input.nextLine();
             Employee newEmployee = new Employee(employeeAge,employeeName, employeeGender,employeeRace, employeeNumber, employeeTitle, employeeHireDate );
 
+            //add Employee to employee list
 
 
-    }
-}}
+    } else if (location == 2) {
+}
